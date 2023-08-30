@@ -24,6 +24,6 @@ jobs:
       uses: actions-js/push@master
       with:
         github_token: ${{ secrets.GH_TOKEN }}
-        author_email: '136500031+GiGaChadCi@users.noreply.github.com'
+        author_email: '136500031+GGaChadCi@users.noreply.github.com'
         author_name: 'Derp'
         message: 'Derp: Derpify'
